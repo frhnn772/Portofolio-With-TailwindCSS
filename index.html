@@ -7,14 +7,8 @@
     <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href="dist/css/style.css" rel="stylesheet">
     <title>Portofolio | Frhnn772</title>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-    <script>
-        if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-        document.documentElement.classList.add('dark')
-        } else {
-        document.documentElement.classList.remove('dark')
-        }
-    </script>
 </head>
 <body>
 <header class="bg-transparent absolute top-0 left-0 w-full flex items-center z-10">
@@ -163,19 +157,5 @@
     <!-- <a href="#home" class="hidden justify-center items-center h-14 w-14 bg-primary rounded-full fixed z-[9999] bottom-4 right-4 p-4 hover:animate-pulse" id="to-top">
     <span class="block w-5 h-5 border-t-2 border-l-2 rotate-45 mt-2"></span> -->
 <script src="dist/js/script.js"></script>
-<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
-<script>
-    const galleryImage = document.querySelectorAll('.aos-fade-down');
-
-galleryImage.forEach((img, i) => {
-img.dataset.aos = 'fade-down';
-img.dataset.aosDelay = i * 500;
-img.dataset.aosDuration = 1000;
-});
-
-AOS.init({
-    once: true
-});
-</script>
 </body>
 </html>
