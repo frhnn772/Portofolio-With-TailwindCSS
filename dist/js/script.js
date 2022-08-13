@@ -36,8 +36,8 @@ window.addEventListener('click', function(e){
 var typed = new Typed('#ketik', {
     // Waits 1000ms after typing "First"
 strings: ['Student', 'Human', 'Gamers', 'Web Developer'],
-typeSpeed:175,
-backSpeed:85,
+typeSpeed:180,
+backSpeed:80,
 loop:true,
 });
 
@@ -60,4 +60,8 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
     darkToggle.checked = true;
 } else {
     darkToggle.checked = false;
-  }
+};
+
+
+
+  
