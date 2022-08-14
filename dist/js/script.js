@@ -22,25 +22,31 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 };
 
 // animasi aos
-const aosFade = document.querySelectorAll('.aos-fade-down');
+const aosFade = document.querySelectorAll('#aos-fade-down');
 
     aosFade.forEach((img, i) => {
     img.dataset.aos = 'fade-down';
-    img.dataset.aosDelay = i * 500;
+    img.dataset.aosDelay = i * 400;
     img.dataset.aosDuration = 1000;
 });
 
 AOS.init({
-    once: true
+    once: true,
 });
 
+// animasi gsap
+gsap.from("#fade-down", {duration: 1, delay:1.5, opacity: 0, ease: "bounce", y: -50});
+gsap.from("#slide-side", {duration: 1, delay:1, opacity: 0, ease: "back", x: -100});
+gsap.to('#tulis', {duration: 7, delay: 2, text: "Ini adalah Web Porfolio yang saya buat dan digunakan untuk menampilkan tentang saya, skill yang saya miliki dan, project yang saya kerjakan.", ease: "none"});
+
+
 // typing
-var typed = new Typed('#ketik', {
-    // Waits 1000ms after typing "First"
-strings: ['Student', 'Human', 'Gamers', 'Web Developer'],
-typeSpeed:180,
-backSpeed:80,
-loop:true,
+new Typed('#ketik', {
+
+    strings: ['Student', 'Human', 'Gamers', 'Web Developer'],
+    typeSpeed:180,
+    backSpeed:80,
+    loop:true,
 });
 
 // Navbar Fixed dan to top
