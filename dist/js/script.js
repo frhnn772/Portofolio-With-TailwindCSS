@@ -35,9 +35,10 @@ AOS.init({
 });
 
 // animasi gsap
+
 gsap.from("#fade-down", {duration: 1, delay:1.5, opacity: 0, ease: "bounce", y: -50});
 gsap.from("#slide-side", {duration: 1, delay:1, opacity: 0, ease: "back", x: -100});
-gsap.to('#tulis', {duration: 7, delay: 2, text: "Ini adalah Web Porfolio yang saya buat dan digunakan untuk menampilkan tentang saya, skill yang saya miliki dan, project yang saya kerjakan.", ease: "none"});
+gsap.to('#tulis', {duration: 7, delay: 2, text: "Web ini dibuat dengan tujuan untuk menampilkan informasi tentang saya, skill yang saya miliki dan, project yang telah saya kerjakan", ease: "none"});
 
 
 // typing
