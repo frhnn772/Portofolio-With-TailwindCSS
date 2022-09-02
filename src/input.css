@@ -3,7 +3,7 @@
 @tailwind utilities;
 
 body {
-    font-family: 'Quicksand', Inter;
+    font-family: 'Quicksand' sans-serif;
     user-select: none;
     -moz-user-select: none;
     -ms-user-select: none;

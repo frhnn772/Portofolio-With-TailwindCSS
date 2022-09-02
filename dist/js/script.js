@@ -22,13 +22,19 @@ if (localStorage.theme === 'dark' || (!('theme' in localStorage) && window.match
 };
 
 // animasi aos
-const aosFade = document.querySelectorAll('#aos-fade-down');
-
-    aosFade.forEach((img, i) => {
+const aosDown = document.querySelectorAll('#aos-fade-down');
+aosDown.forEach((img, i) => {
     img.dataset.aos = 'fade-down';
     img.dataset.aosDelay = i * 400;
     img.dataset.aosDuration = 1000;
 });
+const aosIn = document.querySelectorAll('#aos-fade-in');
+    aosIn.forEach((img, i) => {
+    img.dataset.aos = 'fade-in';
+    img.dataset.aosDelay = i * 400;
+    img.dataset.aosDuration = 1000;
+});
+
 
 AOS.init({
     once: true,
